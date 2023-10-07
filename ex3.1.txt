@@ -1,0 +1,7 @@
+const isValidNumber = num => {
+  const parsedNumber = parseInt(num);
+  if (!isFinite(parsedNumber)) return false;
+  if (isNaN(parsedNumber)) return false;
+  if (parsedNumber != num) return false;
+  else if (parsedNumber >= 1 && parsedNumber <= 9) return true;
+};
